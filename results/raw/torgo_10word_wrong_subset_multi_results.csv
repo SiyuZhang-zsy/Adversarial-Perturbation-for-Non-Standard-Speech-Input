@@ -1,0 +1,646 @@
+speaker,split,utt_id,target_word,condition,epsilon,steps,raw_prediction,mapped_prediction,mapped_correct,target_rank,top3_hit,top5_hit,top10_hit,target_distance,duration_sec,wav_head_path,baseline_raw_prediction,baseline_mapped_prediction,baseline_target_rank,baseline_target_distance
+F01,dev,52,spark,baseline_wrong,0,0,mike,bit,0,10,0,0,1,5,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,,,,
+F01,dev,52,spark,pgd_wrong_subset,8e-05,2,mok,no,0,8,0,0,1,4,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,8e-05,3,munk,dark,0,6,0,0,1,4,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.0001,2,mok,no,0,8,0,0,1,4,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.0001,3,munk,dark,0,6,0,0,1,4,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.00012,2,mak,dark,0,6,0,0,1,3,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.00012,3,wo,no,0,10,0,0,1,5,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.00014,2,moke,no,0,10,0,0,1,5,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.00014,3,mok,no,0,8,0,0,1,4,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.00016,2,moke,no,0,10,0,0,1,5,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.00016,3,mok,no,0,8,0,0,1,4,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.00018,2,moke,no,0,10,0,0,1,5,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.00018,3,mok,no,0,8,0,0,1,4,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.0002,2,mok,no,0,8,0,0,1,4,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,52,spark,pgd_wrong_subset,0.0002,3,mo,no,0,10,0,0,1,5,1.4675625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0052.wav,mike,bit,10,5
+F01,dev,62,sip,baseline_wrong,0,0,so,no,0,2,1,1,1,2,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,,,,
+F01,dev,62,sip,pgd_wrong_subset,8e-05,2,saint,bit,0,3,1,1,1,3,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,8e-05,3,sam,sip,1,1,1,1,1,2,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.0001,2,slaint,bit,0,3,1,1,1,4,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.0001,3,en,no,0,4,0,1,1,3,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.00012,2,sir,sip,1,1,1,1,1,1,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.00012,3,sen,sip,1,1,1,1,1,2,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.00014,2,sir,sip,1,1,1,1,1,1,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.00014,3,plan,park,0,6,0,0,1,4,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.00016,2,sir,sip,1,1,1,1,1,1,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.00016,3,slaint,bit,0,3,1,1,1,4,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.00018,2,slerp,sheet,0,2,1,1,1,3,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.00018,3,sir,sip,1,1,1,1,1,1,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.0002,2,slerp,sheet,0,2,1,1,1,3,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,62,sip,pgd_wrong_subset,0.0002,3,slerp,sheet,0,2,1,1,1,3,1.067375,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0062.wav,so,no,2,2
+F01,dev,72,sheet,baseline_wrong,0,0,say it,bit,0,2,1,1,1,4,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,,,,
+F01,dev,72,sheet,pgd_wrong_subset,8e-05,2,say,sip,0,8,0,0,1,4,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,8e-05,3,sa,no,0,8,0,0,1,4,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.0001,2,see,sheet,1,1,1,1,1,2,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.0001,3,same,dark,0,3,1,1,1,3,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.00012,2,se,no,0,5,0,1,1,3,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.00012,3,sa,no,0,8,0,0,1,4,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.00014,2,se,no,0,5,0,1,1,3,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.00014,3,say,sip,0,8,0,0,1,4,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.00016,2,he,no,0,4,0,1,1,3,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.00016,3,say,sip,0,8,0,0,1,4,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.00018,2,h,no,0,8,0,0,1,4,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.00018,3,ki,bit,0,9,0,0,1,5,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.0002,2,q,no,0,9,0,0,1,5,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,72,sheet,pgd_wrong_subset,0.0002,3,the,bit,0,3,1,1,1,3,1.5211875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0072.wav,say it,bit,2,4
+F01,dev,100,floor,baseline_wrong,0,0,bol,bit,0,6,0,0,1,4,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,,,,
+F01,dev,100,floor,pgd_wrong_subset,8e-05,2,bol,bit,0,6,0,0,1,4,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,8e-05,3,bar,bit,0,8,0,0,1,4,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.0001,2,bol,bit,0,6,0,0,1,4,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.0001,3,bol,bit,0,6,0,0,1,4,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.00012,2,bol,bit,0,6,0,0,1,4,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.00012,3,brol,bit,0,4,0,1,1,4,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.00014,2,bul,bit,0,7,0,0,1,5,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.00014,3,bol,bit,0,6,0,0,1,4,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.00016,2,bul,bit,0,7,0,0,1,5,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.00016,3,bo,no,0,6,0,0,1,4,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.00018,2,bo,no,0,6,0,0,1,4,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.00018,3,pool,floor,1,1,1,1,1,3,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.0002,2,bol,bit,0,6,0,0,1,4,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,100,floor,pgd_wrong_subset,0.0002,3,pu,no,0,8,0,0,1,5,1.981875,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0100.wav,bol,bit,6,4
+F01,dev,112,right,baseline_wrong,0,0,i,bit,0,7,0,0,1,4,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,,,,
+F01,dev,112,right,pgd_wrong_subset,8e-05,2,huas,yes,0,10,0,0,1,5,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,8e-05,3,who i s,bit,0,9,0,0,1,7,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.0001,2,rits,bit,0,2,1,1,1,3,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.0001,3,lit,bit,0,4,0,1,1,3,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.00012,2,rins,bit,0,3,1,1,1,3,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.00012,3,grat,bit,0,5,0,1,1,4,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.00014,2,who i,floor,0,7,0,0,1,5,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.00014,3,who i,floor,0,7,0,0,1,5,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.00016,2,who i,floor,0,7,0,0,1,5,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.00016,3,laces,yes,0,8,0,0,1,5,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.00018,2,who i,floor,0,7,0,0,1,5,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.00018,3,lace,dark,0,10,0,0,1,5,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.0002,2,lins,bit,0,8,0,0,1,4,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,112,right,pgd_wrong_subset,0.0002,3,hua,bit,0,10,0,0,1,5,1.6345,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0112.wav,i,bit,7,4
+F01,dev,121,park,baseline_wrong,0,0,pike,bit,0,2,1,1,1,3,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,,,,
+F01,dev,121,park,pgd_wrong_subset,8e-05,2,pug,bit,0,3,1,1,1,3,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,8e-05,3,puck,park,1,1,1,1,1,2,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.0001,2,palc,park,1,1,1,1,1,2,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.0001,3,pat,bit,0,2,1,1,1,2,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.00012,2,polc,no,0,2,1,1,1,3,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.00012,3,pad,park,1,1,1,1,1,2,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.00014,2,palac,park,1,1,1,1,1,3,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.00014,3,pac,park,1,1,1,1,1,2,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.00016,2,palc,park,1,1,1,1,1,2,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.00016,3,paco,park,1,1,1,1,1,2,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.00018,2,put,bit,0,3,1,1,1,3,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.00018,3,pac,park,1,1,1,1,1,2,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.0002,2,put,bit,0,3,1,1,1,3,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F01,dev,121,park,pgd_wrong_subset,0.0002,3,polyc,no,0,2,1,1,1,4,1.832625,D:\audio_adv_experiment\datasets\TORGO.F\F01\Session1\wav_headMic\0121.wav,pike,bit,2,3
+F03,test,34,spark,baseline_wrong,0,0,spike,sip,0,2,1,1,1,3,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,,,,
+F03,test,34,spark,pgd_wrong_subset,8e-05,2,spy,sip,0,4,0,1,1,3,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,8e-05,3,spike,sip,0,2,1,1,1,3,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.0001,2,spy,sip,0,4,0,1,1,3,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.0001,3,spride,sip,0,2,1,1,1,4,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.00012,2,spi,sip,0,4,0,1,1,3,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.00012,3,spite,bit,0,3,1,1,1,3,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.00014,2,spifin,sip,0,2,1,1,1,4,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.00014,3,spifing,sip,0,2,1,1,1,5,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.00016,2,spyfing,sip,0,2,1,1,1,5,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.00016,3,spy fing,sip,0,2,1,1,1,6,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.00018,2,spy fin,sip,0,2,1,1,1,5,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.00018,3,spie,sip,0,4,0,1,1,3,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.0002,2,spy fam,spark,1,1,1,1,1,5,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,34,spark,pgd_wrong_subset,0.0002,3,spie,sip,0,4,0,1,1,3,2.4585,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0034.wav,spike,sip,2,3
+F03,test,40,sip,baseline_wrong,0,0,,no,0,3,1,1,1,3,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,,,
+F03,test,40,sip,pgd_wrong_subset,8e-05,2,si,sip,1,1,1,1,1,1,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,8e-05,3,,no,0,3,1,1,1,3,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.0001,2,s,no,0,2,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.0001,3,se,no,0,2,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.00012,2,s,no,0,2,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.00012,3,s,no,0,2,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.00014,2,s,no,0,2,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.00014,3,sec,sip,1,1,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.00016,2,se,no,0,2,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.00016,3,so,no,0,2,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.00018,2,se,no,0,2,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.00018,3,sec,sip,1,1,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.0002,2,se,no,0,2,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,40,sip,pgd_wrong_subset,0.0002,3,sec,sip,1,1,1,1,1,2,2.5513125,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0040.wav,,no,3,3
+F03,test,74,dark,baseline_wrong,0,0,do,no,0,3,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,,,,
+F03,test,74,dark,pgd_wrong_subset,8e-05,2,dov,no,0,3,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,8e-05,3,dal,dark,1,1,1,1,1,2,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.0001,2,do,no,0,3,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.0001,3,dol,no,0,3,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.00012,2,do,no,0,3,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.00012,3,dul,bit,0,2,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.00014,2,don,no,0,3,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.00014,3,dov,no,0,3,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.00016,2,dov,no,0,3,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.00016,3,dul,bit,0,2,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.00018,2,don't,bit,0,2,1,1,1,4,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.00018,3,dol,no,0,3,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.0002,2,don,no,0,3,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,74,dark,pgd_wrong_subset,0.0002,3,done,dark,1,1,1,1,1,3,1.004625,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0074.wav,do,no,3,3
+F03,test,113,sip,baseline_wrong,0,0,su,no,0,2,1,1,1,2,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,,,,
+F03,test,113,sip,pgd_wrong_subset,8e-05,2,su,no,0,2,1,1,1,2,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,8e-05,3,sup,sip,1,1,1,1,1,1,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.0001,2,su,no,0,2,1,1,1,2,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.0001,3,te,no,0,4,0,1,1,3,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.00012,2,su,no,0,2,1,1,1,2,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.00012,3,te,no,0,4,0,1,1,3,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.00014,2,fot,bit,0,4,0,1,1,3,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.00014,3,sup,sip,1,1,1,1,1,1,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.00016,2,sup,sip,1,1,1,1,1,1,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.00016,3,to,no,0,3,1,1,1,3,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.00018,2,sup,sip,1,1,1,1,1,1,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.00018,3,sup,sip,1,1,1,1,1,1,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.0002,2,top,no,0,2,1,1,1,2,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,113,sip,pgd_wrong_subset,0.0002,3,top,no,0,2,1,1,1,2,1.5349375,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session1\wav_headMic\0113.wav,su,no,2,2
+F03,test,107,bit,baseline_wrong,0,0,f,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,,,,
+F03,test,107,bit,pgd_wrong_subset,8e-05,2,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,8e-05,3,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.0001,2,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.0001,3,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.00012,2,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.00012,3,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.00014,2,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.00014,3,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.00016,2,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.00016,3,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.00018,2,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.00018,3,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.0002,2,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,107,bit,pgd_wrong_subset,0.0002,3,,no,0,2,1,1,1,3,1.76,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session2\wav_headMic\0107.wav,f,no,2,3
+F03,test,161,sip,baseline_wrong,0,0,shirt,sheet,0,3,1,1,1,3,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,,,,
+F03,test,161,sip,pgd_wrong_subset,8e-05,2,tur,bit,0,5,0,1,1,3,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,8e-05,3,cur,bit,0,5,0,1,1,3,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.0001,2,tu,no,0,3,1,1,1,3,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.0001,3,,no,0,3,1,1,1,3,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.00012,2,turk,dark,0,6,0,0,1,4,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.00012,3,shir,sip,1,1,1,1,1,2,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.00014,2,chirk,dark,0,6,0,0,1,4,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.00014,3,t,bit,0,3,1,1,1,3,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.00016,2,chirk,dark,0,6,0,0,1,4,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.00016,3,t,bit,0,3,1,1,1,3,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.00018,2,kr,no,0,5,0,1,1,3,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.00018,3,,no,0,3,1,1,1,3,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.0002,2,,no,0,3,1,1,1,3,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F03,test,161,sip,pgd_wrong_subset,0.0002,3,tu,no,0,3,1,1,1,3,1.315,D:\audio_adv_experiment\datasets\TORGO.F\F03\Session3\wav_headMic\0161.wav,shirt,sheet,3,3
+F04,dev,240,right,baseline_wrong,0,0,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,,,,
+F04,dev,240,right,pgd_wrong_subset,8e-05,2,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,8e-05,3,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.0001,2,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.0001,3,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.00012,2,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.00012,3,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.00014,2,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.00014,3,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.00016,2,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.00016,3,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.00018,2,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.00018,3,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.0002,2,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+F04,dev,240,right,pgd_wrong_subset,0.0002,3,rite,bit,0,2,1,1,1,3,2.795,D:\audio_adv_experiment\datasets\TORGO.F\F04\Session2\wav_headMic\0240.wav,rite,bit,2,3
+M01,test,47,park,baseline_wrong,0,0,bark,dark,0,2,1,1,1,1,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,,,,
+M01,test,47,park,pgd_wrong_subset,8e-05,2,bark,dark,0,2,1,1,1,1,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,8e-05,3,bark,dark,0,2,1,1,1,1,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.0001,2,bark,dark,0,2,1,1,1,1,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.0001,3,barg,dark,0,2,1,1,1,2,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.00012,2,bark,dark,0,2,1,1,1,1,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.00012,3,barg,dark,0,2,1,1,1,2,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.00014,2,bork,dark,0,2,1,1,1,2,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.00014,3,barg,dark,0,2,1,1,1,2,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.00016,2,bok,bit,0,4,0,1,1,3,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.00016,3,barg,dark,0,2,1,1,1,2,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.00018,2,brok,bit,0,4,0,1,1,3,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.00018,3,barg,dark,0,2,1,1,1,2,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.0002,2,bark,dark,0,2,1,1,1,1,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,47,park,pgd_wrong_subset,0.0002,3,bork,dark,0,2,1,1,1,2,2.885,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0047.wav,bark,dark,2,1
+M01,test,68,right,baseline_wrong,0,0,rump,sip,0,6,0,0,1,4,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,,,,
+M01,test,68,right,pgd_wrong_subset,8e-05,2,rap,sip,0,7,0,0,1,4,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,8e-05,3,ranp,dark,0,6,0,0,1,4,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.0001,2,rant,bit,0,5,0,1,1,3,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.0001,3,ran,bit,0,7,0,0,1,4,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.00012,2,rat,bit,0,5,0,1,1,3,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.00012,3,rump,sip,0,6,0,0,1,4,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.00014,2,rant,bit,0,5,0,1,1,3,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.00014,3,rat,bit,0,5,0,1,1,3,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.00016,2,rant,bit,0,5,0,1,1,3,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.00016,3,rant,bit,0,5,0,1,1,3,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.00018,2,rant,bit,0,5,0,1,1,3,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.00018,3,rump,sip,0,6,0,0,1,4,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.0002,2,rant,bit,0,5,0,1,1,3,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,68,right,pgd_wrong_subset,0.0002,3,ranp,dark,0,6,0,0,1,4,3.64,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0068.wav,rump,sip,6,4
+M01,test,88,spark,baseline_wrong,0,0,urk,dark,0,6,0,0,1,3,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,,,,
+M01,test,88,spark,pgd_wrong_subset,8e-05,2,r,no,0,9,0,0,1,4,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,8e-05,3,ar,dark,0,6,0,0,1,3,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.0001,2,r,no,0,9,0,0,1,4,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.0001,3,,no,0,10,0,0,1,5,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.00012,2,ark,dark,0,3,1,1,1,2,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.00012,3,r,no,0,9,0,0,1,4,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.00014,2,r,no,0,9,0,0,1,4,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.00014,3,r,no,0,9,0,0,1,4,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.00016,2,ark,dark,0,3,1,1,1,2,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.00016,3,ar,dark,0,6,0,0,1,3,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.00018,2,arc,dark,0,6,0,0,1,3,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.00018,3,ar,dark,0,6,0,0,1,3,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.0002,2,r,no,0,9,0,0,1,4,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,88,spark,pgd_wrong_subset,0.0002,3,,no,0,10,0,0,1,5,3.4600625,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0088.wav,urk,dark,6,3
+M01,test,89,spark,baseline_wrong,0,0,he brak,dark,0,3,1,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,,,,
+M01,test,89,spark,pgd_wrong_subset,8e-05,2,he brak,dark,0,3,1,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,8e-05,3,he brak,dark,0,3,1,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.0001,2,he brak,dark,0,3,1,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.0001,3,he brak,dark,0,3,1,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.00012,2,he brak,dark,0,3,1,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.00012,3,he brak,dark,0,3,1,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.00014,2,he brak,dark,0,3,1,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.00014,3,he brak,dark,0,3,1,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.00016,2,fe brak,dark,0,4,0,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.00016,3,he brak,dark,0,3,1,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.00018,2,fe brak,dark,0,4,0,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.00018,3,fe brak,dark,0,4,0,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.0002,2,fe brak,dark,0,4,0,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,89,spark,pgd_wrong_subset,0.0002,3,fe brak,dark,0,4,0,1,1,5,4.545,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session1\wav_headMic\0089.wav,he brak,dark,3,5
+M01,test,12,sip,baseline_wrong,0,0,hy,no,0,3,1,1,1,3,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,,,,
+M01,test,12,sip,pgd_wrong_subset,8e-05,2,te,no,0,4,0,1,1,3,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,8e-05,3,he,no,0,5,0,1,1,3,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.0001,2,terc,dark,0,7,0,0,1,4,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.0001,3,sip,sip,1,1,1,1,1,0,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.00012,2,ter,yes,0,6,0,0,1,3,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.00012,3,terc,dark,0,7,0,0,1,4,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.00014,2,zep,sip,1,1,1,1,1,2,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.00014,3,sik,sip,1,1,1,1,1,1,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.00016,2,zep,sip,1,1,1,1,1,2,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.00016,3,sok,no,0,2,1,1,1,2,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.00018,2,zip,sip,1,1,1,1,1,1,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.00018,3,sik,sip,1,1,1,1,1,1,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.0002,2,sip,sip,1,1,1,1,1,0,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,12,sip,pgd_wrong_subset,0.0002,3,tik,bit,0,2,1,1,1,2,1.646875,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0012.wav,hy,no,3,3
+M01,test,22,floor,baseline_wrong,0,0,no,no,0,6,0,0,1,4,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,,,,
+M01,test,22,floor,pgd_wrong_subset,8e-05,2,shuel,sheet,0,7,0,0,1,5,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,8e-05,3,shuelo,sheet,0,8,0,0,1,6,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.0001,2,you know,no,0,3,1,1,1,7,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.0001,3,no,no,0,6,0,0,1,4,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.00012,2,fello,floor,1,1,1,1,1,3,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.00012,3,sno,no,0,6,0,0,1,4,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.00014,2,yello,yes,0,2,1,1,1,4,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.00014,3,truyello,yes,0,2,1,1,1,7,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.00016,2,ello,floor,1,1,1,1,1,3,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.00016,3,tru yello,yes,0,2,1,1,1,8,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.00018,2,to yellow,floor,1,1,1,1,1,7,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.00018,3,rer,yes,0,7,0,0,1,4,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.0002,2,tello,floor,1,1,1,1,1,4,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,22,floor,pgd_wrong_subset,0.0002,3,he,no,0,9,0,0,1,5,2.125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0022.wav,no,no,6,4
+M01,test,89,floor,baseline_wrong,0,0,tor,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,,,,
+M01,test,89,floor,pgd_wrong_subset,8e-05,2,or,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,8e-05,3,or,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.0001,2,or,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.0001,3,or,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.00012,2,or,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.00012,3,tor,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.00014,2,or,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.00014,3,tor,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.00016,2,or,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.00016,3,or,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.00018,2,or,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.00018,3,or,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.0002,2,or,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,89,floor,pgd_wrong_subset,0.0002,3,tor,no,0,4,0,1,1,3,2.22325,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0089.wav,tor,no,4,3
+M01,test,238,spark,baseline_wrong,0,0,the bark,dark,0,3,1,1,1,5,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,,,,
+M01,test,238,spark,pgd_wrong_subset,8e-05,2,hipac,sip,0,5,0,1,1,4,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,8e-05,3,he boled,sheet,0,10,0,0,1,8,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.0001,2,hepipe,sip,0,5,0,1,1,5,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.0001,3,hit forward,bit,0,5,0,1,1,9,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.00012,2,hep ipe,sip,0,5,0,1,1,6,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.00012,3,keep iy,bit,0,5,0,1,1,6,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.00014,2,hid fip,sip,0,9,0,0,1,7,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.00014,3,hebo,no,0,10,0,0,1,5,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.00016,2,hidfor,floor,0,9,0,0,1,6,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.00016,3,ebor,bit,0,7,0,0,1,4,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.00018,2,hidforc,dark,0,8,0,0,1,6,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.00018,3,keep pike,park,0,2,1,1,1,7,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.0002,2,hidfarc,dark,0,3,1,1,1,5,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,238,spark,pgd_wrong_subset,0.0002,3,himpor,floor,0,7,0,0,1,5,1.7473125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0238.wav,the bark,dark,3,5
+M01,test,261,dark,baseline_wrong,0,0,dik,bit,0,2,1,1,1,2,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,,,,
+M01,test,261,dark,pgd_wrong_subset,8e-05,2,dag,dark,1,1,1,1,1,2,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,8e-05,3,dike,bit,0,2,1,1,1,3,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.0001,2,day,dark,1,1,1,1,1,2,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.0001,3,dike,bit,0,2,1,1,1,3,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.00012,2,dag,dark,1,1,1,1,1,2,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.00012,3,dike,bit,0,2,1,1,1,3,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.00014,2,dag,dark,1,1,1,1,1,2,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.00014,3,dike,bit,0,2,1,1,1,3,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.00016,2,dag,dark,1,1,1,1,1,2,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.00016,3,rdo,no,0,5,0,1,1,4,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.00018,2,dak,dark,1,1,1,1,1,1,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.00018,3,dike,bit,0,2,1,1,1,3,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.0002,2,dag,dark,1,1,1,1,1,2,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M01,test,261,dark,pgd_wrong_subset,0.0002,3,dok,dark,1,1,1,1,1,2,2.106125,D:\audio_adv_experiment\datasets\TORGO.M\M01\Session2_3\wav_headMic\0261.wav,dik,bit,2,2
+M02,test,76,right,baseline_wrong,0,0,ripe,sip,0,3,1,1,1,3,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,,,,
+M02,test,76,right,pgd_wrong_subset,8e-05,2,ripe,sip,0,3,1,1,1,3,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,8e-05,3,great,sheet,0,3,1,1,1,4,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.0001,2,ripe,sip,0,3,1,1,1,3,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.0001,3,grit,bit,0,2,1,1,1,3,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.00012,2,ripe,sip,0,3,1,1,1,3,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.00012,3,rip,sip,0,4,0,1,1,3,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.00014,2,ripe,sip,0,3,1,1,1,3,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.00014,3,great,sheet,0,3,1,1,1,4,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.00016,2,ripe,sip,0,3,1,1,1,3,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.00016,3,rit,bit,0,2,1,1,1,2,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.00018,2,ripe,sip,0,3,1,1,1,3,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.00018,3,ripe,sip,0,3,1,1,1,3,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.0002,2,ripe,sip,0,3,1,1,1,3,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,76,right,pgd_wrong_subset,0.0002,3,rit,bit,0,2,1,1,1,2,2.0459375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0076.wav,ripe,sip,3,3
+M02,test,91,sip,baseline_wrong,0,0,tomp,no,0,2,1,1,1,3,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,,,,
+M02,test,91,sip,pgd_wrong_subset,8e-05,2,domp,dark,0,3,1,1,1,3,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,8e-05,3,domp,dark,0,3,1,1,1,3,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.0001,2,donp,dark,0,3,1,1,1,3,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.0001,3,chimp,sip,1,1,1,1,1,3,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.00012,2,ship,sip,1,1,1,1,1,1,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.00012,3,champ,dark,0,4,0,1,1,4,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.00014,2,top,no,0,2,1,1,1,2,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.00014,3,fhamp,dark,0,5,0,1,1,4,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.00016,2,domp,dark,0,3,1,1,1,3,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.00016,3,dont,bit,0,8,0,0,1,4,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.00018,2,domp,dark,0,3,1,1,1,3,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.00018,3,shot,sheet,0,4,0,1,1,3,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.0002,2,domp,dark,0,3,1,1,1,3,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,91,sip,pgd_wrong_subset,0.0002,3,cop,no,0,2,1,1,1,2,2.4319375,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0091.wav,tomp,no,2,3
+M02,test,195,floor,baseline_wrong,0,0,law,bit,0,7,0,0,1,4,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,,,,
+M02,test,195,floor,pgd_wrong_subset,8e-05,2,plor,floor,1,1,1,1,1,2,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,8e-05,3,lore,dark,0,2,1,1,1,3,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.0001,2,puar,park,0,5,0,1,1,4,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.0001,3,tor,no,0,4,0,1,1,3,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.00012,2,por,no,0,5,0,1,1,3,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.00012,3,lor,floor,1,1,1,1,1,2,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.00014,2,pure,park,0,9,0,0,1,5,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.00014,3,tor,no,0,4,0,1,1,3,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.00016,2,plore,floor,1,1,1,1,1,3,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.00016,3,toal,no,0,4,0,1,1,4,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.00018,2,flore,floor,1,1,1,1,1,2,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.00018,3,hor,no,0,4,0,1,1,3,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.0002,2,lor,floor,1,1,1,1,1,2,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,195,floor,pgd_wrong_subset,0.0002,3,ar,dark,0,8,0,0,1,4,2.5171875,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session1\wav_headMic\0195.wav,law,bit,7,4
+M02,test,122,dark,baseline_wrong,0,0,dait,bit,0,2,1,1,1,2,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,,,,
+M02,test,122,dark,pgd_wrong_subset,8e-05,2,dawit,bit,0,2,1,1,1,3,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,8e-05,3,dait,bit,0,2,1,1,1,2,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.0001,2,dait,bit,0,2,1,1,1,2,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.0001,3,dait,bit,0,2,1,1,1,2,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.00012,2,dick,dark,1,1,1,1,1,2,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.00012,3,dait,bit,0,2,1,1,1,2,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.00014,2,dawit,bit,0,2,1,1,1,3,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.00014,3,dait,bit,0,2,1,1,1,2,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.00016,2,dait,bit,0,2,1,1,1,2,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.00016,3,ding,bit,0,2,1,1,1,3,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.00018,2,da,dark,1,1,1,1,1,2,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.00018,3,din,bit,0,3,1,1,1,3,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.0002,2,dai,dark,1,1,1,1,1,2,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,122,dark,pgd_wrong_subset,0.0002,3,da it,bit,0,2,1,1,1,3,1.855,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0122.wav,dait,bit,2,2
+M02,test,181,park,baseline_wrong,0,0,pa,no,0,2,1,1,1,2,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,,,,
+M02,test,181,park,pgd_wrong_subset,8e-05,2,pa,no,0,2,1,1,1,2,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,8e-05,3,par,park,1,1,1,1,1,1,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.0001,2,pa,no,0,2,1,1,1,2,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.0001,3,pa,no,0,2,1,1,1,2,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.00012,2,par,park,1,1,1,1,1,1,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.00012,3,pa,no,0,2,1,1,1,2,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.00014,2,pa,no,0,2,1,1,1,2,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.00014,3,par,park,1,1,1,1,1,1,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.00016,2,pa,no,0,2,1,1,1,2,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.00016,3,park,park,1,1,1,1,1,0,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.00018,2,pa,no,0,2,1,1,1,2,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.00018,3,park,park,1,1,1,1,1,0,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.0002,2,pa,no,0,2,1,1,1,2,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M02,test,181,park,pgd_wrong_subset,0.0002,3,po,no,0,3,1,1,1,3,3.2,D:\audio_adv_experiment\datasets\TORGO.M\M02\Session2\wav_headMic\0181.wav,pa,no,2,2
+M04,test,19,sheet,baseline_wrong,0,0,ud,no,0,9,0,0,1,5,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,,,,
+M04,test,19,sheet,pgd_wrong_subset,8e-05,2,ut,bit,0,8,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,8e-05,3,t,bit,0,8,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.0001,2,ut,bit,0,8,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.0001,3,ot,bit,0,9,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.00012,2,yote,bit,0,7,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.00012,3,ut,bit,0,8,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.00014,2,yote,bit,0,7,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.00014,3,ut,bit,0,8,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.00016,2,t,bit,0,8,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.00016,3,yot,bit,0,9,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.00018,2,yt,bit,0,8,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.00018,3,ut,bit,0,8,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.0002,2,ut,bit,0,8,0,0,1,4,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,19,sheet,pgd_wrong_subset,0.0002,3,hunton,no,0,4,0,1,1,5,3.1,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0019.wav,ud,no,9,5
+M04,test,20,spark,baseline_wrong,0,0,burg,bit,0,6,0,0,1,4,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,,,,
+M04,test,20,spark,pgd_wrong_subset,8e-05,2,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,8e-05,3,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.0001,2,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.0001,3,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.00012,2,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.00012,3,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.00014,2,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.00014,3,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.00016,2,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.00016,3,buge,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.00018,2,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.00018,3,sbug,bit,0,7,0,0,1,4,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.0002,2,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,20,spark,pgd_wrong_subset,0.0002,3,bug,bit,0,10,0,0,1,5,2.955,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0020.wav,burg,bit,6,4
+M04,test,30,park,baseline_wrong,0,0,a,no,0,4,0,1,1,3,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,,,,
+M04,test,30,park,pgd_wrong_subset,8e-05,2,,no,0,6,0,0,1,4,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,8e-05,3,a,no,0,4,0,1,1,3,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.0001,2,,no,0,6,0,0,1,4,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.0001,3,a,no,0,4,0,1,1,3,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.00012,2,,no,0,6,0,0,1,4,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.00012,3,,no,0,6,0,0,1,4,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.00014,2,a,no,0,4,0,1,1,3,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.00014,3,a,no,0,4,0,1,1,3,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.00016,2,agam,bit,0,4,0,1,1,4,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.00016,3,ba,bit,0,4,0,1,1,3,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.00018,2,we,no,0,6,0,0,1,4,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.00018,3,bag,bit,0,4,0,1,1,3,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.0002,2,we,no,0,6,0,0,1,4,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,30,park,pgd_wrong_subset,0.0002,3,a,no,0,4,0,1,1,3,2.95,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0030.wav,a,no,4,3
+M04,test,35,sip,baseline_wrong,0,0,fic,bit,0,2,1,1,1,2,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,,,,
+M04,test,35,sip,pgd_wrong_subset,8e-05,2,phip,sip,1,1,1,1,1,2,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,8e-05,3,fic,bit,0,2,1,1,1,2,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.0001,2,fic,bit,0,2,1,1,1,2,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.0001,3,fic,bit,0,2,1,1,1,2,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.00012,2,tic,bit,0,2,1,1,1,2,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.00012,3,fic,bit,0,2,1,1,1,2,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.00014,2,tich,bit,0,3,1,1,1,3,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.00014,3,fig,bit,0,2,1,1,1,2,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.00016,2,thich,bit,0,4,0,1,1,4,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.00016,3,pip,sip,1,1,1,1,1,1,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.00018,2,thicc,bit,0,3,1,1,1,4,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.00018,3,feg,yes,0,4,0,1,1,3,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.0002,2,tik,bit,0,2,1,1,1,2,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M04,test,35,sip,pgd_wrong_subset,0.0002,3,feg,yes,0,4,0,1,1,3,2.29,D:\audio_adv_experiment\datasets\TORGO.M\M04\Session2\wav_headMic\0035.wav,fic,bit,2,2
+M05,test,12,spark,baseline_wrong,0,0,she she quek,sheet,0,2,1,1,1,10,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,,,,
+M05,test,12,spark,pgd_wrong_subset,8e-05,2,shsh guek,sheet,0,2,1,1,1,7,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,8e-05,3,shsh guek,sheet,0,2,1,1,1,7,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.0001,2,shsh guek,sheet,0,2,1,1,1,7,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.0001,3,shshguek,sheet,0,2,1,1,1,6,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.00012,2,shshguek,sheet,0,2,1,1,1,6,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.00012,3,shshguek,sheet,0,2,1,1,1,6,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.00014,2,shshguek,sheet,0,2,1,1,1,6,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.00014,3,shshguak,sheet,0,2,1,1,1,6,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.00016,2,shshgek,sheet,0,2,1,1,1,5,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.00016,3,shshguek,sheet,0,2,1,1,1,6,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.00018,2,shshgek,sheet,0,2,1,1,1,5,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.00018,3,shshguek,sheet,0,2,1,1,1,6,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.0002,2,shshgek,sheet,0,2,1,1,1,5,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,12,spark,pgd_wrong_subset,0.0002,3,sshgek,sheet,0,2,1,1,1,4,2.94,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0012.wav,she she quek,sheet,2,10
+M05,test,21,sip,baseline_wrong,0,0,shit,bit,0,3,1,1,1,2,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,,,,
+M05,test,21,sip,pgd_wrong_subset,8e-05,2,shit,bit,0,3,1,1,1,2,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,8e-05,3,sit,bit,0,2,1,1,1,1,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.0001,2,se it,bit,0,3,1,1,1,3,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.0001,3,sit,bit,0,2,1,1,1,1,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.00012,2,sit,bit,0,2,1,1,1,1,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.00012,3,sit,bit,0,2,1,1,1,1,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.00014,2,sit,bit,0,2,1,1,1,1,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.00014,3,sheit,sheet,0,3,1,1,1,3,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.00016,2,shit,bit,0,3,1,1,1,2,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.00016,3,ship,sip,1,1,1,1,1,1,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.00018,2,shit,bit,0,3,1,1,1,2,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.00018,3,sit,bit,0,2,1,1,1,1,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.0002,2,ship,sip,1,1,1,1,1,1,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,21,sip,pgd_wrong_subset,0.0002,3,sit,bit,0,2,1,1,1,1,2.61,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0021.wav,shit,bit,3,2
+M05,test,25,floor,baseline_wrong,0,0,sladawa,dark,0,3,1,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,,,,
+M05,test,25,floor,pgd_wrong_subset,8e-05,2,sladawa,dark,0,3,1,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,8e-05,3,sladawa,dark,0,3,1,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.0001,2,sladewai,sheet,0,4,0,1,1,7,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.0001,3,sladawa,dark,0,3,1,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.00012,2,sladawa,dark,0,3,1,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.00012,3,sladewai,sheet,0,4,0,1,1,7,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.00014,2,sladawa,dark,0,3,1,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.00014,3,sladewa,sheet,0,4,0,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.00016,2,sladawa,dark,0,3,1,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.00016,3,sladawa,dark,0,3,1,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.00018,2,sladawa,dark,0,3,1,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.00018,3,sladewa,sheet,0,4,0,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.0002,2,sledawa,dark,0,4,0,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,25,floor,pgd_wrong_subset,0.0002,3,sladawa,dark,0,3,1,1,1,6,3.645,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0025.wav,sladawa,dark,3,6
+M05,test,69,sip,baseline_wrong,0,0,shercon,sheet,0,7,0,0,1,6,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,,,,
+M05,test,69,sip,pgd_wrong_subset,8e-05,2,her o,dark,0,9,0,0,1,5,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,8e-05,3,her o,dark,0,9,0,0,1,5,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.0001,2,her o,dark,0,9,0,0,1,5,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.0001,3,her o,dark,0,9,0,0,1,5,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.00012,2,her o,dark,0,9,0,0,1,5,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.00012,3,her,yes,0,7,0,0,1,3,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.00014,2,hero,dark,0,8,0,0,1,4,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.00014,3,her,yes,0,7,0,0,1,3,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.00016,2,her,yes,0,7,0,0,1,3,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.00016,3,her,yes,0,7,0,0,1,3,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.00018,2,her,yes,0,7,0,0,1,3,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.00018,3,her,yes,0,7,0,0,1,3,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.0002,2,her,yes,0,7,0,0,1,3,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,69,sip,pgd_wrong_subset,0.0002,3,sher,sheet,0,2,1,1,1,3,2.0850625,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0069.wav,shercon,sheet,7,6
+M05,test,73,sip,baseline_wrong,0,0,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,,,,
+M05,test,73,sip,pgd_wrong_subset,8e-05,2,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,8e-05,3,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.0001,2,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.0001,3,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.00012,2,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.00012,3,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.00014,2,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.00014,3,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.00016,2,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.00016,3,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.00018,2,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.00018,3,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.0002,2,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,73,sip,pgd_wrong_subset,0.0002,3,sit si,bit,0,2,1,1,1,4,2.865,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0073.wav,sit si,bit,2,4
+M05,test,130,dark,baseline_wrong,0,0,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,,,,
+M05,test,130,dark,pgd_wrong_subset,8e-05,2,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,8e-05,3,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.0001,2,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.0001,3,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.00012,2,doric,dark,1,1,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.00012,3,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.00014,2,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.00014,3,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.00016,2,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.00016,3,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.00018,2,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.00018,3,delic,bit,0,2,1,1,1,4,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.0002,2,dic,bit,0,3,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,130,dark,pgd_wrong_subset,0.0002,3,dlic,bit,0,2,1,1,1,3,3.105,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session1\wav_headMic\0130.wav,dic,bit,3,3
+M05,test,64,floor,baseline_wrong,0,0,slit,bit,0,5,0,1,1,4,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,,,,
+M05,test,64,floor,pgd_wrong_subset,8e-05,2,slot,bit,0,2,1,1,1,3,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,8e-05,3,sot,bit,0,7,0,0,1,4,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.0001,2,slot,bit,0,2,1,1,1,3,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.0001,3,slit,bit,0,5,0,1,1,4,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.00012,2,still,sip,0,6,0,0,1,5,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.00012,3,slo,no,0,4,0,1,1,3,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.00014,2,so,no,0,6,0,0,1,4,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.00014,3,slt,bit,0,7,0,0,1,4,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.00016,2,sloit,bit,0,2,1,1,1,3,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.00016,3,slo,no,0,4,0,1,1,3,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.00018,2,slowit,bit,0,2,1,1,1,4,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.00018,3,sli,sip,0,6,0,0,1,4,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.0002,2,slowit,bit,0,2,1,1,1,4,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,64,floor,pgd_wrong_subset,0.0002,3,so,no,0,6,0,0,1,4,2.665,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0064.wav,slit,bit,5,4
+M05,test,205,spark,baseline_wrong,0,0,so,no,0,9,0,0,1,4,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,,,,
+M05,test,205,spark,pgd_wrong_subset,8e-05,2,mispo,sip,0,10,0,0,1,5,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,8e-05,3,sclik,sip,0,2,1,1,1,3,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.0001,2,miss clog,bit,0,7,0,0,1,8,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.0001,3,slig,sip,0,9,0,0,1,4,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.00012,2,you spo,yes,0,10,0,0,1,7,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.00012,3,miss goyk,right,0,2,1,1,1,7,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.00014,2,misgot,right,0,10,0,0,1,6,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.00014,3,scoc,no,0,8,0,0,1,4,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.00016,2,missur glok,spark,1,1,1,1,1,8,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.00016,3,so,no,0,9,0,0,1,4,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.00018,2,miss brog,spark,1,1,1,1,1,7,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.00018,3,sclog,floor,0,5,0,1,1,4,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.0002,2,miss grok,spark,1,1,1,1,1,6,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,205,spark,pgd_wrong_subset,0.0002,3,s co,no,0,8,0,0,1,4,3.205,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0205.wav,so,no,9,4
+M05,test,227,park,baseline_wrong,0,0,poor,floor,0,3,1,1,1,3,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,,,,
+M05,test,227,park,pgd_wrong_subset,8e-05,2,poor,floor,0,3,1,1,1,3,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,8e-05,3,pok,no,0,2,1,1,1,2,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.0001,2,pok,no,0,2,1,1,1,2,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.0001,3,poorck,park,1,1,1,1,1,3,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.00012,2,por,no,0,2,1,1,1,2,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.00012,3,poor,floor,0,3,1,1,1,3,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.00014,2,poor,floor,0,3,1,1,1,3,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.00014,3,porik,park,1,1,1,1,1,2,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.00016,2,poor,floor,0,3,1,1,1,3,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.00016,3,poor,floor,0,3,1,1,1,3,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.00018,2,poor,floor,0,3,1,1,1,3,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.00018,3,po,no,0,3,1,1,1,3,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.0002,2,poor,floor,0,3,1,1,1,3,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,227,park,pgd_wrong_subset,0.0002,3,pork,park,1,1,1,1,1,1,2.405,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0227.wav,poor,floor,3,3
+M05,test,255,dark,baseline_wrong,0,0,doic,bit,0,2,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,,,,
+M05,test,255,dark,pgd_wrong_subset,8e-05,2,doic,bit,0,2,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,8e-05,3,doic,bit,0,2,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.0001,2,doric,dark,1,1,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.0001,3,doic,bit,0,2,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.00012,2,doic,bit,0,2,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.00012,3,doic,bit,0,2,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.00014,2,doic,bit,0,2,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.00014,3,doric,dark,1,1,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.00016,2,doic,bit,0,2,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.00016,3,dik,bit,0,2,1,1,1,2,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.00018,2,doic,bit,0,2,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.00018,3,doi,no,0,3,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.0002,2,doic,bit,0,2,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,255,dark,pgd_wrong_subset,0.0002,3,doit,bit,0,2,1,1,1,3,2.975,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0255.wav,doic,bit,2,3
+M05,test,289,right,baseline_wrong,0,0,reak,dark,0,7,0,0,1,4,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,,,,
+M05,test,289,right,pgd_wrong_subset,8e-05,2,ak,dark,0,9,0,0,1,5,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,8e-05,3,rura,dark,0,5,0,1,1,4,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.0001,2,rures,yes,0,4,0,1,1,4,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.0001,3,at,bit,0,7,0,0,1,4,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.00012,2,wua,bit,0,9,0,0,1,5,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.00012,3,rua,bit,0,7,0,0,1,4,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.00014,2,w ak,dark,0,9,0,0,1,5,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.00014,3,rais,bit,0,7,0,0,1,4,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.00016,2,wu ake,dark,0,7,0,0,1,6,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.00016,3,rues,yes,0,6,0,0,1,4,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.00018,2,u ate,bit,0,7,0,0,1,5,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.00018,3,ruras,dark,0,3,1,1,1,4,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.0002,2,wait,bit,0,6,0,0,1,4,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,289,right,pgd_wrong_subset,0.0002,3,a,no,0,9,0,0,1,5,3.275,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0289.wav,reak,dark,7,4
+M05,test,338,sheet,baseline_wrong,0,0,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,,,
+M05,test,338,sheet,pgd_wrong_subset,8e-05,2,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,8e-05,3,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.0001,2,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.0001,3,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.00012,2,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.00012,3,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.00014,2,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.00014,3,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.00016,2,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.00016,3,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.00018,2,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.00018,3,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.0002,2,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
+M05,test,338,sheet,pgd_wrong_subset,0.0002,3,,no,0,9,0,0,1,5,0.026375,D:\audio_adv_experiment\datasets\TORGO.M\M05\Session2\wav_headMic\0338.wav,,no,9,5
