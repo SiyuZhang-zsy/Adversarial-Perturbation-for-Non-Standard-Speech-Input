@@ -17,7 +17,7 @@ Install packages from:
 
 ## Data
 
-The current scripts were developed and tested with dysarthric speech data prepared from TORGO. The repository does not redistribute the original dataset. Other datasets may also be usable, but additional preprocessing and manifest adaptation may be required.
+The current scripts were developed and tested with dysarthric speech data prepared from [TORGO](https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html). Other datasets may also be usable, but additional preprocessing and manifest adaptation may be required.
 
 ## Expected data format
 
