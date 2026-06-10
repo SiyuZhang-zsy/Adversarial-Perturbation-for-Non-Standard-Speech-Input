@@ -312,6 +312,19 @@ def main() -> None:
     parser.add_argument("--max-items", type=int, default=5)
     parser.add_argument("--candidate-limit", type=int, default=50)
     parser.add_argument(
+        "--experiment",
+        default="Full lexicon",
+        help="Vocabulary experiment name in the Whisper baseline CSV.",
+    )
+    parser.add_argument(
+        "--all-confirmed-failures",
+        action="store_true",
+        help=(
+            "Evaluate every baseline failure that remains a failure when "
+            "re-decoded by the differentiable Whisper implementation."
+        ),
+    )
+    parser.add_argument(
         "--per-speaker",
         type=int,
         default=None,
@@ -346,6 +359,10 @@ def main() -> None:
         default=Path("analysis/results/whisper_direct_attack_pilot"),
     )
     args = parser.parse_args()
+    if args.per_speaker and args.all_confirmed_failures:
+        parser.error(
+            "--per-speaker and --all-confirmed-failures are mutually exclusive"
+        )
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     device = torch.device(args.device)
@@ -377,10 +394,14 @@ def main() -> None:
     )
     baseline = pd.read_csv(args.baseline_csv)
     failed_candidates = baseline[
-        (baseline["experiment"] == "Full lexicon")
+        (baseline["experiment"] == args.experiment)
         & (baseline["split"] == "test")
         & (baseline["mapped_correct"] == 0)
     ]
+    if failed_candidates.empty:
+        raise RuntimeError(
+            f"No test failures found for experiment {args.experiment!r}"
+        )
     if args.per_speaker:
         candidates = pd.concat(
             [
@@ -391,6 +412,8 @@ def main() -> None:
             ],
             ignore_index=True,
         )
+    elif args.all_confirmed_failures:
+        candidates = failed_candidates
     else:
         candidates = failed_candidates.head(args.candidate_limit)
 
@@ -411,6 +434,7 @@ def main() -> None:
         if mapped == normalize_text(row.target_word):
             return None
         return {
+            "experiment": args.experiment,
             "speaker": row.speaker,
             "utt_id": row.utt_id,
             "target_word": normalize_text(row.target_word),
@@ -445,15 +469,27 @@ def main() -> None:
             evaluated = evaluate_candidate(row)
             if evaluated is not None:
                 selected.append(evaluated)
-            if len(selected) >= args.max_items:
+            if (
+                not args.all_confirmed_failures
+                and len(selected) >= args.max_items
+            ):
                 break
         required_items = args.max_items
 
-    if len(selected) < required_items:
+    if args.all_confirmed_failures and not selected:
+        raise RuntimeError(
+            "No baseline failures remained failures under the differentiable "
+            "Whisper implementation"
+        )
+    if not args.all_confirmed_failures and len(selected) < required_items:
         raise RuntimeError(
             f"Found only {len(selected)} direct-model failures among "
             f"{len(candidates)} candidates"
         )
+    print(
+        f"Selected {len(selected)} confirmed failures from "
+        f"{len(failed_candidates)} baseline failures for {args.experiment}."
+    )
 
     rows = []
     random_rows = []

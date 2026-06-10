@@ -57,12 +57,29 @@ Under the same closed-vocabulary mapping, Whisper large-v3-turbo achieves
 43.9% mapped accuracy on 1,844 held-out full-lexicon utterances, leaving 1,035
 failed inputs.
 
-Direct optimization uses a single fixed hyperparameter configuration,
+To avoid success-based subsampling, the primary direct-recovery analysis covers
+the complete 10-word test setting. The held-out set contains 136 utterances.
+Faster-Whisper produces 39 mapped failures; 33 remain failures when re-decoded
+by the differentiable implementation used for optimization, while six are
+already correct and do not trigger recovery.
+
+Direct optimization uses one fixed hyperparameter configuration,
 `epsilon=0.0002, K=3`, selected as the first configuration in the previously
 frozen Wav2Vec2 policy. No Whisper-specific parameter search is performed.
-The evaluation takes the first 10 confirmed failures in dataset order for each
-of six held-out speakers. It repairs 27/60 inputs; five matched random controls
-per item repair 0/300.
+It repairs 18/33 confirmed failures (54.5%; 95% Wilson CI 38.0-70.2%),
+including 15 exact target transcriptions. Five matched random controls per
+item repair 3/165 trials across 2/33 utterances. Targeted recovery differs from
+the any-random result in the paired comparison (`p=0.000145`). Mapped accuracy
+under the differentiable implementation rises from 75.7% to 89.0%.
+
+![Complete 10-word direct recovery](figures/direct_whisper_10word_all_failures.png)
+
+Files: [`results/whisper_direct_10word/`](results/whisper_direct_10word/)
+
+As a broader-vocabulary sensitivity analysis, we also retain the
+speaker-balanced full-lexicon subset. It takes the first 10 confirmed failures
+per held-out speaker (60 total), repairs 27/60, and has 0/300 matched-random
+repairs. This subset is not the primary complete-failure-set result.
 
 ![Direct Whisper recovery](figures/direct_whisper_results.png)
 

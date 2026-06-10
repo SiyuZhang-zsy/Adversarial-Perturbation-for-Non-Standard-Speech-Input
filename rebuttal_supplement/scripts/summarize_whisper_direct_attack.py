@@ -114,6 +114,22 @@ def main() -> None:
             "analysis/results/whisper_direct_attack_large_balanced60_masked"
         ),
     )
+    parser.add_argument(
+        "--title",
+        default="Direct Whisper Large-v3-turbo Targeted-Recovery Experiment",
+    )
+    parser.add_argument(
+        "--selection-description",
+        default=(
+            "The evaluation used 60 confirmed full-lexicon failures, balanced "
+            "at 10 utterances for each of six held-out speakers. For each "
+            "speaker, we took the first 10 items in dataset order that "
+            "remained failures when re-decoded by the differentiable "
+            "implementation."
+        ),
+    )
+    parser.add_argument("--total-test-items", type=int, default=None)
+    parser.add_argument("--baseline-failures", type=int, default=None)
     args = parser.parse_args()
 
     results = pd.read_csv(args.result_dir / "results.csv")
@@ -172,13 +188,64 @@ def main() -> None:
     ).proportion_ci(method="wilson")
     raw_exact = int(
         (
-            results["assisted_raw_prediction"].str.lower()
+            results["assisted_raw_prediction"].fillna("").str.lower()
             == results["target_word"].str.lower()
         ).sum()
+    )
+    random_by_item = (
+        random_controls.groupby(KEYS, as_index=False)["mapped_correct"].max()
+    )
+    targeted_vs_any_random = results[KEYS + ["mapped_correct"]].merge(
+        random_by_item,
+        on=KEYS,
+        suffixes=("_targeted", "_random"),
+    )
+    targeted_only_any_random = int(
+        (
+            (targeted_vs_any_random["mapped_correct_targeted"] == 1)
+            & (targeted_vs_any_random["mapped_correct_random"] == 0)
+        ).sum()
+    )
+    random_only_any_random = int(
+        (
+            (targeted_vs_any_random["mapped_correct_targeted"] == 0)
+            & (targeted_vs_any_random["mapped_correct_random"] == 1)
+        ).sum()
+    )
+    any_random_discordant = (
+        targeted_only_any_random + random_only_any_random
+    )
+    any_random_p = (
+        float(
+            binomtest(
+                targeted_only_any_random,
+                any_random_discordant,
+                0.5,
+            ).pvalue
+        )
+        if any_random_discordant
+        else 1.0
+    )
+    direct_baseline_accuracy = (
+        (args.total_test_items - len(results)) / args.total_test_items
+        if args.total_test_items
+        else float("nan")
+    )
+    assisted_overall_accuracy = (
+        (
+            args.total_test_items
+            - len(results)
+            + targeted_successes
+        )
+        / args.total_test_items
+        if args.total_test_items
+        else float("nan")
     )
     statistical_summary = pd.DataFrame(
         [
             {
+                "total_test_items": args.total_test_items,
+                "baseline_failures": args.baseline_failures,
                 "n": len(results),
                 "speakers": results["speaker"].nunique(),
                 "epsilon": results["epsilon"].iloc[0],
@@ -209,6 +276,12 @@ def main() -> None:
                     random_controls["mapped_correct"].sum()
                 ),
                 "max_paired_random_p": exact["paired_exact_p"].max(),
+                "random_items_any_repair": int(
+                    random_by_item["mapped_correct"].sum()
+                ),
+                "random_any_paired_p": any_random_p,
+                "direct_baseline_accuracy": direct_baseline_accuracy,
+                "assisted_overall_accuracy": assisted_overall_accuracy,
             }
         ]
     )
@@ -218,15 +291,13 @@ def main() -> None:
 
     summary_row = statistical_summary.iloc[0]
     lines = [
-        "# Direct Whisper Large-v3-turbo Targeted-Recovery Experiment",
+        f"# {args.title}",
         "",
-        "The evaluation used 60 confirmed full-lexicon failures, balanced at "
-        "10 utterances for each of six held-out speakers. For each speaker, "
-        "we took the first 10 items in dataset order that remained failures "
-        "when re-decoded by the differentiable implementation. The fixed "
-        "policy was epsilon=0.0002 and K=3, matching the first configuration "
-        "in the previously frozen Wav2Vec2 policy order. No Whisper-specific "
-        "parameter search was used.",
+        args.selection_description,
+        "",
+        "The fixed policy was epsilon=0.0002 and K=3, matching the first "
+        "configuration in the previously frozen Wav2Vec2 policy order. No "
+        "Whisper-specific parameter search was used.",
         "",
         f"- Mapped repairs: {targeted_successes}/{len(results)} "
         f"({100 * summary_row.mapped_repair_rate:.1f}%; "
@@ -234,7 +305,10 @@ def main() -> None:
         f"{100 * summary_row.mapped_repair_ci_high:.1f}%).",
         f"- Exact target transcriptions: {raw_exact}/{len(results)}.",
         f"- Matched random controls: "
-        f"{int(summary_row.random_repairs)}/{int(summary_row.random_trials)}.",
+        f"{int(summary_row.random_repairs)}/{int(summary_row.random_trials)} "
+        f"trials, affecting {int(summary_row.random_items_any_repair)}/"
+        f"{len(results)} utterances (targeted vs. any-random paired "
+        f"p={summary_row.random_any_paired_p:.3g}).",
         f"- Target rank improved for {int(summary_row.rank_improved)}/"
         f"{len(results)} items; median rank changed from "
         f"{summary_row.median_original_rank:.1f} to "
@@ -248,10 +322,26 @@ def main() -> None:
         f"{summary_row.median_snr_db:.1f} dB.",
         f"- Across five paired random seeds, the largest exact paired p-value "
         f"was {summary_row.max_paired_random_p:.3g}.",
+    ]
+    if args.total_test_items:
+        lines.append(
+            f"- Overall mapped accuracy under the differentiable implementation: "
+            f"{100 * summary_row.direct_baseline_accuracy:.1f}% before recovery "
+            f"and "
+            f"{100 * summary_row.assisted_overall_accuracy:.1f}% "
+            f"after recovery "
+            f"({args.total_test_items - len(results)}/"
+            f"{args.total_test_items} to "
+            f"{args.total_test_items - len(results) + targeted_successes}/"
+            f"{args.total_test_items})."
+        )
+    lines.extend(
+        [
         "",
         "| Speaker | Targeted repairs | Targeted rate | Random repairs / trials |",
         "|---|---:|---:|---:|",
-    ]
+        ]
+    )
     for row in speaker_summary.itertuples(index=False):
         lines.append(
             f"| {row.speaker} | {row.targeted_repairs}/{row.n} | "
