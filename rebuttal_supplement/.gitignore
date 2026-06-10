@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+*.wav
+*.mp3
+*.pt
+*.bin
+*.ckpt

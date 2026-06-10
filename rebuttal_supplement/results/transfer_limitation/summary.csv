@@ -1,0 +1,3 @@
+subset,n,original_mapped_accuracy,assisted_mapped_accuracy,original_failures,repaired,broken,repair_rate_on_original_failures,top1_exact_p,rank_improved,rank_same,rank_worsened,mean_rank_change,median_rank_change,rank_improvement_p,distance_improved,distance_same,distance_worsened,mean_distance_change
+All selected pairs,50,0.24,0.26,38,2,1,0.05263157894736842,1.0,4,40,6,8.8,0.0,0.7463257533087995,7,39,4,0.04
+Source-reproduced pairs,41,0.2682926829268293,0.2682926829268293,30,1,1,0.03333333333333333,1.0,3,32,6,10.829268292682928,0.0,0.8130800716840423,6,31,4,0.0975609756097561

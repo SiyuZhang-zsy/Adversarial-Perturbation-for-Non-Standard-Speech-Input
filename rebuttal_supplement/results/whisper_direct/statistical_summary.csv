@@ -1,0 +1,2 @@
+n,speakers,epsilon,steps,mapped_repairs,mapped_repair_rate,mapped_repair_ci_low,mapped_repair_ci_high,raw_exact_targets,rank_improved,median_original_rank,median_assisted_rank,mean_original_loss,mean_assisted_loss,loss_wilcoxon_p,rank_wilcoxon_p,median_snr_db,random_trials,random_repairs,max_paired_random_p
+60,6,0.0002,3,27,0.45,0.3309365440675524,0.5750806411466566,26,31,26.0,4.0,5.492838541666667,4.37509765625,8.143943903823776e-12,1.1791189075935566e-06,54.51262522942123,300,0,1.4901161193847656e-08
