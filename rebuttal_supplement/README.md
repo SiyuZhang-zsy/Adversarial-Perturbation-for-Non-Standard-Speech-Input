@@ -36,9 +36,9 @@ order.
 
 Files: [`results/adaptive_policy/`](results/adaptive_policy/)
 
-### Complete Fixed-Policy Mechanism Analysis
+### Complementary All-Failure Wav2Vec2 Analysis
 
-To avoid success-selection bias, the primary mechanism analysis covers all
+As a non-success-selected control, this analysis covers all
 1,103 full-lexicon failures confirmed by length-aware decoding under the
 current Wav2Vec2 runtime. A prior padded-batch confirmation identified 1,116;
 length-aware decoding reclassifies 13 padding-sensitive items as already
@@ -54,12 +54,10 @@ random noise yields 121.945 (`p=0.26`). Ten short utterances have infinite CTC
 loss because the target token sequence exceeds available output frames; they
 remain in recognition and acoustic analyses.
 
-The median signal-to-perturbation ratio is 55.3 dB and 58.8% of perturbation
-energy lies at 4-8 kHz. In same-budget frequency ablation, retaining only
-4-8 kHz gives 47 repairs; removing 4-8 kHz gives 37 and preserves 18/64
-full-perturbation successes (Holm-adjusted `p=0.00545`). This supports a
-high-frequency-weighted contribution, but spectral energy alone does not
-explain recovery.
+The median signal-to-perturbation ratio is 55.3 dB. This Wav2Vec2 analysis
+supports a target-directed rather than generic-noise effect on the complete
+failure set. Its spectral findings are recognizer-specific and are not used
+to infer the Whisper mechanism.
 
 ![Complete mechanism analysis](figures/mechanism_full_fixed_policy.png)
 
@@ -93,6 +91,32 @@ accuracy rises from 48.5% to 67.7%.
 ![Complete full-lexicon direct recovery](figures/direct_whisper_fulllex_all_failures.png)
 
 Files: [`results/whisper_direct_fulllex/`](results/whisper_direct_fulllex/)
+
+### Whisper Success-Conditioned Mechanism
+
+We characterize all 354 successful recoveries from the complete fixed-policy
+Whisper experiment above. This answers what changes are functionally involved
+when recovery succeeds; efficacy and generic-noise specificity are still
+evaluated without success selection on all 950 failures.
+
+Among the successful cases, 306 are exact target transcriptions and mean
+target loss falls from 5.332 to 3.869 (`p=4.54e-60`). Success is associated
+with lower signal-to-perturbation ratios and larger log-spectral changes
+than unsuccessful perturbations (Holm-adjusted
+`p=3.18e-8` and `2.21e-7`). Although 42.3% of successful perturbation energy
+lies at 4-8 kHz, unsuccessful perturbations have a similar share (41.9%;
+`p=0.497`), so high-frequency energy alone is not sufficient.
+
+Under the original L-infinity bound, retaining only 0-0.5, 0.5-2, 2-4, and
+4-8 kHz preserves 9, 90, 127, and 115 of the 354 recoveries. Removing those
+bands preserves 336, 247, 229, and 232. The 2-4 and 4-8 kHz effects do not
+differ significantly in paired tests. These results support distributed,
+target-directed contributions across approximately 0.5-8 kHz rather than
+one necessary or sufficient band.
+
+![Whisper success mechanism](figures/whisper_success_mechanism.png)
+
+Files: [`results/whisper_success_mechanism/`](results/whisper_success_mechanism/)
 
 The complete 10-word test setting is retained as a bounded-vocabulary
 sensitivity analysis. It repairs 18/33 confirmed failures (54.5%) with 3/165
