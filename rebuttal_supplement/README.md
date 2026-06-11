@@ -36,20 +36,37 @@ order.
 
 Files: [`results/adaptive_policy/`](results/adaptive_policy/)
 
-### Acoustic and Model-Space Mechanism
+### Complete Fixed-Policy Mechanism Analysis
 
-Across 50 paired utterances, the median signal-to-perturbation ratio is
-56.6 dB and 59.7% of perturbation energy lies at 4-8 kHz. Mean target CTC loss
-falls from 127.21 to 120.95 for targeted perturbations, while norm-matched
-random noise yields 127.23. Saved-waveform recovery reproduces for 41/50
-targeted examples, compared with 0/250 random controls.
+To avoid success-selection bias, the primary mechanism analysis covers all
+1,103 full-lexicon failures confirmed by length-aware decoding under the
+current Wav2Vec2 runtime. A prior padded-batch confirmation identified 1,116;
+length-aware decoding reclassifies 13 padding-sensitive items as already
+correct. Every evaluated item uses the first dev-frozen configuration,
+`epsilon=0.0002, K=3`; there is no per-item search.
 
-The spectral distribution is descriptive; it does not establish that a
-particular acoustic band causes recovery.
+Targeted PGD repairs 64/1,103 inputs (5.8%). Each of five independently paired
+L-infinity/RMS-matched random seeds repairs 12-14; the largest exact paired
+`p` is `1.55e-9`. Even granting random noise five attempts, any-random repairs
+24/1,103 versus 64/1,103 targeted (`p=8.58e-6`). On 1,093 finite CTC pairs,
+mean target loss falls from 121.971 to 112.375 (`p=2.48e-112`), while matched
+random noise yields 121.945 (`p=0.26`). Ten short utterances have infinite CTC
+loss because the target token sequence exceeds available output frames; they
+remain in recognition and acoustic analyses.
 
-![Mechanism summary](figures/mechanism_summary.png)
+The median signal-to-perturbation ratio is 55.3 dB and 58.8% of perturbation
+energy lies at 4-8 kHz. In same-budget frequency ablation, retaining only
+4-8 kHz gives 47 repairs; removing 4-8 kHz gives 37 and preserves 18/64
+full-perturbation successes (Holm-adjusted `p=0.00545`). This supports a
+high-frequency-weighted contribution, but spectral energy alone does not
+explain recovery.
 
-Files: [`results/mechanism/`](results/mechanism/)
+![Complete mechanism analysis](figures/mechanism_full_fixed_policy.png)
+
+Files:
+
+- [`results/mechanism_full_fixed_policy/`](results/mechanism_full_fixed_policy/)
+- [`results/mechanism/`](results/mechanism/) (earlier 50-example analysis)
 
 ### Whisper Large-v3-turbo
 
@@ -108,9 +125,9 @@ prepared TORGO manifests and, for the adaptive analysis, the original
 multi-configuration result files. These licensed/source data are not duplicated
 in this supplement.
 
-The CSV files published here are aggregate or compact paired-analysis outputs.
-Large raw transcription files, generated audio, local paths, model caches, and
-smoke/pilot runs are intentionally excluded.
+The CSV files published here are aggregate or compact condition-level
+analysis outputs. Generated audio, source audio, local paths, model caches,
+and smoke/pilot runs are intentionally excluded.
 
 ## Statistical Notes
 
