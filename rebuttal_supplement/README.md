@@ -57,36 +57,39 @@ Under the same closed-vocabulary mapping, Whisper large-v3-turbo achieves
 43.9% mapped accuracy on 1,844 held-out full-lexicon utterances, leaving 1,035
 failed inputs.
 
-To avoid success-based subsampling, the primary direct-recovery analysis covers
-the complete 10-word test setting. The held-out set contains 136 utterances.
-Faster-Whisper produces 39 mapped failures; 33 remain failures when re-decoded
-by the differentiable implementation used for optimization, while six are
-already correct and do not trigger recovery.
+The primary direct-recovery analysis includes all full-lexicon failures,
+without success-based subsampling. Of the 1,035 Faster-Whisper mapped failures,
+950 remain failures under the differentiable implementation used for
+optimization; 85 already decode correctly and do not trigger recovery.
 
 Direct optimization uses one fixed hyperparameter configuration,
 `epsilon=0.0002, K=3`, selected as the first configuration in the previously
-frozen Wav2Vec2 policy. No Whisper-specific parameter search is performed.
-It repairs 18/33 confirmed failures (54.5%; 95% Wilson CI 38.0-70.2%),
-including 15 exact target transcriptions. Five matched random controls per
-item repair 3/165 trials across 2/33 utterances. Targeted recovery differs from
-the any-random result in the paired comparison (`p=0.000145`). Mapped accuracy
-under the differentiable implementation rises from 75.7% to 89.0%.
+frozen Wav2Vec2 policy. No Whisper-specific parameter search is performed. It
+repairs 354/950 confirmed failures (37.3%; 95% Wilson CI 34.2-40.4%),
+including 306 exact target transcriptions. Five matched random controls per
+item repair 28/4,750 trials, affecting only 16/950 utterances. Targeted
+recovery differs from the any-random result in the paired comparison
+(`p=3.79e-97`). Target rank improves for 545/950 items (median 36.5 to 4;
+`p=8.37e-47`). Under the differentiable implementation, overall mapped
+accuracy rises from 48.5% to 67.7%.
+
+![Complete full-lexicon direct recovery](figures/direct_whisper_fulllex_all_failures.png)
+
+Files: [`results/whisper_direct_fulllex/`](results/whisper_direct_fulllex/)
+
+The complete 10-word test setting is retained as a bounded-vocabulary
+sensitivity analysis. It repairs 18/33 confirmed failures (54.5%) with 3/165
+matched-random repairs. We also retain the earlier speaker-balanced
+full-lexicon subset, which repairs 27/60 failures with 0/300 matched-random
+repairs.
 
 ![Complete 10-word direct recovery](figures/direct_whisper_10word_all_failures.png)
-
-Files: [`results/whisper_direct_10word/`](results/whisper_direct_10word/)
-
-As a broader-vocabulary sensitivity analysis, we also retain the
-speaker-balanced full-lexicon subset. It takes the first 10 confirmed failures
-per held-out speaker (60 total), repairs 27/60, and has 0/300 matched-random
-repairs. This subset is not the primary complete-failure-set result.
-
-![Direct Whisper recovery](figures/direct_whisper_results.png)
 
 Files:
 
 - [`results/whisper_baseline/`](results/whisper_baseline/)
 - [`results/whisper_direct/`](results/whisper_direct/)
+- [`results/whisper_direct_10word/`](results/whisper_direct_10word/)
 
 ### Cross-Model Transfer Limitation
 
@@ -116,5 +119,5 @@ smoke/pilot runs are intentionally excluded.
 - Target-loss and target-rank comparisons use paired Wilcoxon tests.
 - Matched random controls preserve the relevant perturbation magnitude
   constraints described in each experiment summary.
-- Speaker-level Whisper results are reported because repair rates vary from
-  10% to 90% across the six held-out speakers.
+- Speaker-level full-lexicon Whisper results are reported because repair rates
+  vary from 20.1% to 45.5% across the six held-out speakers.

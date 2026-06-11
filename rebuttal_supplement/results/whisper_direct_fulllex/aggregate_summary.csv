@@ -1,0 +1,2 @@
+model,epsilon,steps,n,repaired,repair_rate,rank_improved,mean_original_loss,mean_assisted_loss,median_snr_db,random_trials,random_repairs,random_repair_rate,random_rank_improved,random_median_snr_db
+openai/whisper-large-v3-turbo,0.0002,3,950,354,0.3726315789473684,545,5.652557565789474,4.390078125,52.74542066023962,4750,28,0.005894736842105263,116,52.745414083363656
