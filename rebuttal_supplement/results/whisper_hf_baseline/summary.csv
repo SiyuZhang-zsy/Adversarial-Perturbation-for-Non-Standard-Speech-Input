@@ -1,0 +1,2 @@
+runtime,n,mapped_correct,mapped_accuracy,mapped_failures
+Hugging Face differentiable Whisper FP16,1844,839,0.4549891540130152,1005

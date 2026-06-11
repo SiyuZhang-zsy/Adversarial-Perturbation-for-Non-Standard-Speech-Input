@@ -1,7 +1,7 @@
 operation,primary,comparator,primary_only,comparator_only,alternative,paired_p,holm_p
-retain,retain_4-8k,retain_0-0.5k,108,2,greater,4.703891296171385e-30,2.822334777702831e-29
-retain,retain_4-8k,retain_0.5-2k,50,25,greater,0.0026141215020071404,0.010456486008028561
-retain,retain_4-8k,retain_2-4k,30,42,greater,0.93754089981568,1.0
-remove,remove_4-8k,remove_0-0.5k,2,106,less,1.8140719332172252e-29,9.070359666086126e-29
-remove,remove_4-8k,remove_0.5-2k,25,40,less,0.040840766970770014,0.12252230091231003
-remove,remove_4-8k,remove_2-4k,29,26,less,0.7049733341116823,1.0
+retain,retain_4-8k,retain_0-0.5k,136,2,greater,2.7527689973357866e-38,1.651661398401472e-37
+retain,retain_4-8k,retain_0.5-2k,59,26,greater,0.00022359958963846425,0.000894398358553857
+retain,retain_4-8k,retain_2-4k,35,44,greater,0.8697872370513783,1.0
+remove,remove_4-8k,remove_0-0.5k,3,109,less,4.5114716354276556e-29,2.2557358177138276e-28
+remove,remove_4-8k,remove_0.5-2k,27,42,less,0.04559324528350577,0.1367797358505173
+remove,remove_4-8k,remove_2-4k,32,27,less,0.7825035974389233,1.0

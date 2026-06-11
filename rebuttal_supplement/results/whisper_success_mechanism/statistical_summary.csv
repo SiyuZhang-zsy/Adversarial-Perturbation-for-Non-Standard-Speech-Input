@@ -1,2 +1,2 @@
 all_confirmed_failures,successful_recoveries,exact_target_transcriptions,success_random_trials,success_random_trial_repairs,success_items_any_random_repair,mean_original_loss_successes,mean_assisted_loss_successes,success_loss_wilcoxon_p,median_success_snr_db,mean_success_4_8khz_energy
-950,354,306,1770,23,13,5.331777454096045,3.869284074858757,4.5352559135293503e-60,50.76531258233264,0.4228474133310279
+1005,396,347,1980,36,18,5.249699139835859,3.8380805121527777,6.193258962174297e-67,50.60484754399371,0.42372767242352516

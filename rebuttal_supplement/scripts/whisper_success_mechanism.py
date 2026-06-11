@@ -70,15 +70,22 @@ def exact_paired_directional(
 
 
 def build_acoustic_table(results: pd.DataFrame, output_path: Path) -> pd.DataFrame:
+    rows: list[dict[str, object]] = []
+    completed: set[str] = set()
     if output_path.exists():
-        return pd.read_csv(output_path)
-    rows = []
+        existing = pd.read_csv(output_path)
+        rows = existing.to_dict("records")
+        if "sample_id" in existing.columns:
+            completed = set(existing["sample_id"].astype(str))
     for index, row in results.iterrows():
+        current_id = sample_id(row)
+        if current_id in completed:
+            continue
         original = load_audio(row["wav_head_path"])
         assisted = load_audio(row["assisted_audio"])
         rows.append(
             {
-                "sample_id": sample_id(row),
+                "sample_id": current_id,
                 "speaker": row["speaker"],
                 "utt_id": row["utt_id"],
                 "target_word": row["target_word"],
@@ -88,7 +95,9 @@ def build_acoustic_table(results: pd.DataFrame, output_path: Path) -> pd.DataFra
         )
         if (index + 1) % 100 == 0:
             print(f"Acoustic features: {index + 1}/{len(results)}")
-    acoustic = pd.DataFrame(rows)
+        if len(rows) % 25 == 0:
+            pd.DataFrame(rows).to_csv(output_path, index=False)
+    acoustic = pd.DataFrame(rows).drop_duplicates("sample_id", keep="last")
     acoustic.to_csv(output_path, index=False)
     return acoustic
 
@@ -411,7 +420,8 @@ def summarize(
         f"This analysis includes all {len(successes)} mapped recoveries produced "
         "by the complete fixed-policy Whisper large-v3-turbo experiment. It "
         "characterizes successful transformations; efficacy and generic-noise "
-        "specificity remain established on all 950 confirmed failures.",
+        f"specificity remain established on all {len(all_results):,} confirmed "
+        "failures.",
         "",
         f"- Exact target transcription: "
         f"{int((successes['assisted_raw_prediction'].map(normalize_text) == successes['target_word'].map(normalize_text)).sum())}/{len(successes)}.",
@@ -431,7 +441,7 @@ def summarize(
         f"and at least one of five random controls repairs "
         f"{int(random_any.sum())}/{len(successes)} items. This contrast is "
         "success-conditioned and is descriptive; the primary random-control test "
-        "uses all 950 failures.",
+        f"uses all {len(all_results):,} failures.",
         "",
         "## Frequency Ablation on Successful Recoveries",
         "",
@@ -587,7 +597,7 @@ def main() -> None:
 
     acoustic = build_acoustic_table(
         all_results,
-        args.output_dir / "acoustic_all_950.csv",
+        args.output_dir / "acoustic_all.csv",
     )
     if "sample_id" not in acoustic.columns:
         if len(acoustic) != len(all_results):
@@ -601,7 +611,7 @@ def main() -> None:
             all_results["sample_id"].to_numpy(),
         )
         acoustic.to_csv(
-            args.output_dir / "acoustic_all_950.csv", index=False
+            args.output_dir / "acoustic_all.csv", index=False
         )
     if args.summarize_existing:
         ablation = pd.read_csv(args.output_dir / "ablation_results.csv")

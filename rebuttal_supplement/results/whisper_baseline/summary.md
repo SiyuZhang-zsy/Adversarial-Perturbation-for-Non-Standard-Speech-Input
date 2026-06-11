@@ -1,4 +1,10 @@
-# Whisper Large-v3-turbo Baseline
+# Legacy Faster-Whisper Contextualization
+
+These CTranslate2/Faster-Whisper results are retained for transparency and
+bounded-vocabulary sensitivity analyses. They are not used as the baseline for
+the unified full-lexicon recovery claim. That claim uses the Hugging Face
+differentiable runtime throughout and reports 45.5% baseline accuracy; see
+[`../whisper_hf_baseline/`](../whisper_hf_baseline/).
 
 | Vocabulary | Split | N | Raw WER | Mapped top-1 | Failed inputs | Failed target recall@5 | Failed target recall@10 |
 |---|---|---:|---:|---:|---:|---:|---:|

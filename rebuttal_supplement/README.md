@@ -68,48 +68,48 @@ Files:
 
 ### Whisper Large-v3-turbo
 
-Under the same closed-vocabulary mapping, Whisper large-v3-turbo achieves
-43.9% mapped accuracy on 1,844 held-out full-lexicon utterances, leaving 1,035
-failed inputs.
-
-The primary direct-recovery analysis includes all full-lexicon failures,
-without success-based subsampling. Of the 1,035 Faster-Whisper mapped failures,
-950 remain failures under the differentiable implementation used for
-optimization; 85 already decode correctly and do not trigger recovery.
+The same Hugging Face differentiable Whisper large-v3-turbo FP16 runtime is
+used for baseline decoding, gradient optimization, and assisted decoding.
+On 1,844 held-out full-lexicon utterances, baseline mapped accuracy is 45.5%
+(839/1,844), leaving 1,005 failures. All 1,005 failures are evaluated without
+success-based subsampling.
 
 Direct optimization uses one fixed hyperparameter configuration,
 `epsilon=0.0002, K=3`, selected as the first configuration in the previously
 frozen Wav2Vec2 policy. No Whisper-specific parameter search is performed. It
-repairs 354/950 confirmed failures (37.3%; 95% Wilson CI 34.2-40.4%),
-including 306 exact target transcriptions. Five matched random controls per
-item repair 28/4,750 trials, affecting only 16/950 utterances. Targeted
+repairs 396/1,005 failures (39.4%; 95% Wilson CI 36.4-42.5%), including 347
+exact target transcriptions. Five matched random controls per item repair
+47/5,025 trials, affecting only 23/1,005 utterances. Targeted
 recovery differs from the any-random result in the paired comparison
-(`p=3.79e-97`). Target rank improves for 545/950 items (median 36.5 to 4;
-`p=8.37e-47`). Under the differentiable implementation, overall mapped
-accuracy rises from 48.5% to 67.7%.
+(`p=6.88e-105`). Target rank improves for 588/1,005 items (median 36 to 4;
+`p=7.19e-51`). Overall mapped accuracy rises from 45.5% to 67.0%
+(839/1,844 to 1,235/1,844).
 
 ![Complete full-lexicon direct recovery](figures/direct_whisper_fulllex_all_failures.png)
 
-Files: [`results/whisper_direct_fulllex/`](results/whisper_direct_fulllex/)
+Files:
+
+- [`results/whisper_hf_baseline/`](results/whisper_hf_baseline/)
+- [`results/whisper_direct_fulllex/`](results/whisper_direct_fulllex/)
 
 ### Whisper Success-Conditioned Mechanism
 
-We characterize all 354 successful recoveries from the complete fixed-policy
+We characterize all 396 successful recoveries from the complete fixed-policy
 Whisper experiment above. This answers what changes are functionally involved
 when recovery succeeds; efficacy and generic-noise specificity are still
-evaluated without success selection on all 950 failures.
+evaluated without success selection on all 1,005 failures.
 
-Among the successful cases, 306 are exact target transcriptions and mean
-target loss falls from 5.332 to 3.869 (`p=4.54e-60`). Success is associated
+Among the successful cases, 347 are exact target transcriptions and mean
+target loss falls from 5.250 to 3.838 (`p=6.19e-67`). Success is associated
 with lower signal-to-perturbation ratios and larger log-spectral changes
 than unsuccessful perturbations (Holm-adjusted
-`p=3.18e-8` and `2.21e-7`). Although 42.3% of successful perturbation energy
+`p=2.18e-10` and `1.83e-8`). Although 42.4% of successful perturbation energy
 lies at 4-8 kHz, unsuccessful perturbations have a similar share (41.9%;
-`p=0.497`), so high-frequency energy alone is not sufficient.
+`p=0.349`), so high-frequency energy alone is not sufficient.
 
 Under the original L-infinity bound, retaining only 0-0.5, 0.5-2, 2-4, and
-4-8 kHz preserves 9, 90, 127, and 115 of the 354 recoveries. Removing those
-bands preserves 336, 247, 229, and 232. The 2-4 and 4-8 kHz effects do not
+4-8 kHz preserves 17, 118, 160, and 151 of the 396 recoveries. Removing those
+bands preserves 377, 286, 266, and 271. The 2-4 and 4-8 kHz effects do not
 differ significantly in paired tests. These results support distributed,
 target-directed contributions across approximately 0.5-8 kHz rather than
 one necessary or sufficient band.
@@ -118,11 +118,12 @@ one necessary or sufficient band.
 
 Files: [`results/whisper_success_mechanism/`](results/whisper_success_mechanism/)
 
-The complete 10-word test setting is retained as a bounded-vocabulary
-sensitivity analysis. It repairs 18/33 confirmed failures (54.5%) with 3/165
-matched-random repairs. We also retain the earlier speaker-balanced
-full-lexicon subset, which repairs 27/60 failures with 0/300 matched-random
-repairs.
+The earlier Faster-Whisper results are retained only as legacy
+contextualization and bounded-vocabulary sensitivity analyses; they are not
+mixed into the unified full-lexicon claim above. The complete 10-word test
+setting repairs 18/33 confirmed failures (54.5%) with 3/165 matched-random
+repairs. We also retain the earlier speaker-balanced full-lexicon subset,
+which repairs 27/60 failures with 0/300 matched-random repairs.
 
 ![Complete 10-word direct recovery](figures/direct_whisper_10word_all_failures.png)
 
@@ -161,4 +162,4 @@ and smoke/pilot runs are intentionally excluded.
 - Matched random controls preserve the relevant perturbation magnitude
   constraints described in each experiment summary.
 - Speaker-level full-lexicon Whisper results are reported because repair rates
-  vary from 20.1% to 45.5% across the six held-out speakers.
+  vary from 21.9% to 49.2% across the six held-out speakers.
