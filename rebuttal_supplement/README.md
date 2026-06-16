@@ -21,7 +21,7 @@ configuration is treated as an oracle upper bound. The non-oracle analysis
 instead learns a configuration order on two development speakers and freezes
 that order before evaluation on six speaker-disjoint test speakers.
 
-![AdaptaVoice workflow](figures/adaptavoice_workflow.png)
+![AdaptaVoice overview](figures/adaptavoice_workflow.png)
 
 ## Results
 
